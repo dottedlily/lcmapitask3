@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LCMApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac4eb5502e917bd13bd05f48f86840489c7caedf")]
 [assembly: System.Reflection.AssemblyProductAttribute("LCMApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LCMApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -31,3 +31,4 @@
 /Users/sovkasilver/LCMApi/obj/Debug/net8.0/LCMApi.pdb
 /Users/sovkasilver/LCMApi/obj/Debug/net8.0/LCMApi.genruntimeconfig.cache
 /Users/sovkasilver/LCMApi/obj/Debug/net8.0/ref/LCMApi.dll
+/Users/sovkasilver/LCMApi/obj/Debug/net8.0/LCMApi.sourcelink.json
