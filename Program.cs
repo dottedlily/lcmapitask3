@@ -10,16 +10,20 @@ var app = builder.Build();
 app.UseHealthChecks("/health");
 
 
-app.MapGet("/app/nur_matova_jan_gmail_com", (double x, double y) =>
+
+app.MapGet("/app/nur_matova_jan_gmail_com", (string x, string y) =>
 {
-    if (x > 0 && y > 0 && x % 1 == 0 && y % 1 == 0)
+    if (!int.TryParse(x, out int x_naturalnum) || !int.TryParse(y, out int y_naturalnum)){
+        return Results.Text("NaN");
+    }
+    if (x_naturalnum > 0 && y_naturalnum > 0)
     {
         double lcm = 0, i = 1;
         while (lcm == 0)
         {
-            if (x * i % y == 0)
+            if (x_naturalnum * i % y_naturalnum == 0)
             {
-                lcm = x * i;
+                lcm = x_naturalnum * i;
                 break;
             }
             i++;
