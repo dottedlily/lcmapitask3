@@ -1,4 +1,4 @@
 @LCMApi_HostAddress = http://localhost:8080
 
-GET {{LCMApi_HostAddress}}/app/nur_matova_jan_gmail_com
+GET {{LCMApi_HostAddress}}/nur_matova_jan_gmail_com
 Accept: application/json
