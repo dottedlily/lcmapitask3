@@ -13,7 +13,7 @@ app.UseHealthChecks("/health");
 app.MapGet("/nur_matova_jan_gmail_com", (string x, string y) =>
 {
     if (!int.TryParse(x, out int x_naturalnum) || !int.TryParse(y, out int y_naturalnum)){
-        return Results.Text("NaN");
+        return Results.Content("<html><body>NaN</body></html>", "text/html");
     }
     if (x_naturalnum > 0 && y_naturalnum > 0)
     {
@@ -29,7 +29,7 @@ app.MapGet("/nur_matova_jan_gmail_com", (string x, string y) =>
         }
         return Results.Text(lcm.ToString());
     }
-    return Results.Text("NaN");
+    return Results.Content("<html><body>NaN</body></html>", "text/html");
 });
 
 app.Run();
